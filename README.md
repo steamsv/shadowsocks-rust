@@ -1,6 +1,6 @@
 ```
 {
-    "server": "103.137.62.149",
+    "server": "0.0.0.0",
     "server_port": 8388,
     "password": "mypassword",
     "method": "aes-256-gcm",
