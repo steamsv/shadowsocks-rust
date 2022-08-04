@@ -1,0 +1,16 @@
+[Unit]
+Description=ss
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+Type=simple
+User=root
+Restart=always
+RestartSec=1
+DynamicUser=true
+LimitNOFILE=4000000
+ExecStart=/usr/bin/shadowsocks-rust -c /etc/shadowsocks-rust/config --log-config /etc/shadowsocks-rust/log4rs.yaml
+
+[Install]
+WantedBy=multi-user.target
