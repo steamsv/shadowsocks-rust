@@ -1,6 +1,8 @@
 ```
 curl -L https://github.com/steamsv/shadowsocks-rust/raw/main/ssserver -o /usr/bin/ssserver
+curl -L https://github.com/steamsv/shadowsocks-rust/raw/main/ssurl -o /usr/bin/ssurl
 chmod +x /usr/bin/ssserver
+chmod +x /usr/bin/ssurl
 ```
 
 
